@@ -1,0 +1,53 @@
+:root {
+  /* colors */
+  --background: #fcfdff;
+  --white: #ffffff;
+  --black: #000000;
+  --grey1: #d7d7d7;
+  --grey2: #cccccc;
+  --primary1: #2e3192;
+  --primary2: #f6faff;
+  --primary3: #e1e4f0;
+  --success: #65d7e7;
+  --info: #5789e3;
+  --warning: #fbbf09;
+  --danger: #dd626a;
+
+  /* colors - chip, alert */
+  --blue-bg: #dff2ff;
+  --blue-text: #0d68fc;
+  --magenta-bg: #ffedf5;
+  --magenta-text: #ce1374;
+  --orange-bg: #fff7e3;
+  --orange-text: #de651d;
+  --green-bg: #f2ffeb;
+  --green-text: #009717;
+  --grey-bg: #fcfdff;
+  --grey-text: #cccccc;
+  --red-bg: #ffefee;
+  --red-text: #db1824;
+  --gold-bg: #fffbe3;
+  --gold-text: #da801a;
+  --lime-bg: #fbffe3;
+  --lime-text: #61ae18;
+  --purple-bg: #faedff;
+  --purple-text: #5a0ca5;
+  --cyan-bg: #dcfffa;
+  --cyan-text: #008c91;
+  --geekblue-bg: #edf3ff;
+  --geekblue-text: #1c20ba;
+
+  /* typo */
+  --small: 0.625rem;
+  --medium: 0.75rem;
+  --large: 0.875rem;
+  --title: 1.25rem;
+
+  /* fontWeights */
+  --text: 400;
+  --bold: 500;
+  --extraBold: 800;
+
+  /* shadow */
+  --dropdown: 2px 2px 4px 3px rgba(215, 215, 215, 0.25);
+}
