@@ -1,4 +1,5 @@
+.DS_store
+
 # Fined tuned Roberta model
 /roberta_model
-
 model
