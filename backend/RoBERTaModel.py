@@ -1,13 +1,12 @@
 from transformers import RobertaTokenizer, RobertaForSequenceClassification
 import torch
 
-# tokenizer 불러오기
-tokenizer_name = "roberta-base"
-trained_tokenizer = RobertaTokenizer.from_pretrained(tokenizer_name)
+model_dir = "./roberta_model"
 
+# tokenizer 불러오기
+trained_tokenizer = RobertaTokenizer.from_pretrained(model_dir)
 # 모델 불러오기
-model_name = "./roberta_model"
-model = RobertaForSequenceClassification.from_pretrained(model_name)
+model = RobertaForSequenceClassification.from_pretrained(model_dir)
 
 # 예측 클래스 리스트
 classes = ['SUM','SUMIF','ROUND','ROUNDDOWN','ROUNDUP','INT','ABS','SQRT','EXP','FACT',
