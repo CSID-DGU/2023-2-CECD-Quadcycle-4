@@ -26,6 +26,11 @@ def find_classification(text):
         output = model(**inputs)
 
     logits = output.logits
-    result = torch.argmax(logits, dim=1).item()
+    predicted = torch.argmax(logits, dim=1).item()
+    probabilites = torch.softmax(logits, dim=1).tolist()[0]
 
-    return classes[result]
+    # 추론 확률이 50% 미만이면 Invalid
+    if probabilites[predicted] < 0.5:
+        return "Invalid"
+
+    return classes[predicted]

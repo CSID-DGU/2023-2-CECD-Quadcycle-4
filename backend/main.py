@@ -17,6 +17,9 @@ async def classify_text(text: str):
     # Roberta 모델로 추론
     # label = RoBERTaModel.find_classification(text)
 
+    if label == "Invalid":
+        return {"label": "Invalid"}
+
     question = Question.find_question(label)
 
     return {"label": label, "question": question}
